@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.4@aar" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/6e2c8617d3b422bb38ede091487771eb/transformed/lifecycle-livedata-core-ktx-2.8.4/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/6e2c8617d3b422bb38ede091487771eb/transformed/lifecycle-livedata-core-ktx-2.8.4/res" />
+      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/6e2c8617d3b422bb38ede091487771eb/transformed/lifecycle-livedata-core-ktx-2.8.4/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-livedata-core-ktx/2.8.4/2ad14aed781c4a73ed4dbb421966d408a0a06686/lifecycle-livedata-core-ktx-2.8.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

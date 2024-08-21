@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Tennis-.iml" filepath="$PROJECT_DIR$/.idea/Tennis-.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tennis.iml" filepath="$PROJECT_DIR$/.idea/modules/tennis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/tennis.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/tennis.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/tennis.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/tennis.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/tennis.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/tennis.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/tennis.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/tennis.app.unitTest.iml" />
     </modules>
   </component>
 </project>
