@@ -1,26 +1,33 @@
-package com.example.tennis.ui.calendar
-
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
+import android.graphics.Color
 import androidx.lifecycle.ViewModel
+import java.text.SimpleDateFormat
+import java.util.*
+
+data class Reservation(
+    val date: Date,
+    val hour: Int,
+    val minute: Int,
+    val courtNumber: Int,
+    val option: String,
+    val color: Int
+)
 
 class CalendarViewModel : ViewModel() {
-    // 예약 정보를 저장할 리스트
-    private val _reservations = MutableLiveData<List<Reservation>>()
-    val reservations: LiveData<List<Reservation>> = _reservations
+    private val reservations = mutableMapOf<String, Reservation>()
 
-    init {
-        _reservations.value = emptyList()
+    fun addReservation(date: Date, hour: Int, minute: Int, courtNumber: Int, option: String) {
+        val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
+        val dateKey = dateFormat.format(date)
+        val color = if (option == "예매일") Color.RED else Color.BLUE
+        val reservation = Reservation(date, hour, minute, courtNumber, option, color)
+        reservations[dateKey] = reservation
     }
 
-    fun addReservation(date: String, time: String, details: String) {
-        val currentList = _reservations.value.orEmpty().toMutableList()
-        currentList.add(Reservation(date, time, details))
-        currentList.sortBy { it.date }
-        _reservations.value = currentList
+    fun getReservation(date: String): Reservation? {
+        return reservations[date]
     }
 
-    // 예약 정보를 나타내는 데이터 클래스
-    data class Reservation(val date: String, val time: String, val details: String)
+    fun getAllReservations(): Map<String, Reservation> {
+        return reservations.toMap()
+    }
 }
-
