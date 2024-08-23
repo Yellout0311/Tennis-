@@ -1,33 +1,35 @@
-import android.graphics.Color
-import androidx.lifecycle.ViewModel
-import java.text.SimpleDateFormat
-import java.util.*
+package com.example.tennis.ui.calendar
 
-data class Reservation(
-    val date: Date,
-    val hour: Int,
-    val minute: Int,
-    val courtNumber: Int,
-    val option: String,
-    val color: Int
-)
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import com.prolificinteractive.materialcalendarview.CalendarDay
 
 class CalendarViewModel : ViewModel() {
-    private val reservations = mutableMapOf<String, Reservation>()
 
-    fun addReservation(date: Date, hour: Int, minute: Int, courtNumber: Int, option: String) {
-        val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
-        val dateKey = dateFormat.format(date)
-        val color = if (option == "예매일") Color.RED else Color.BLUE
-        val reservation = Reservation(date, hour, minute, courtNumber, option, color)
-        reservations[dateKey] = reservation
+    // 예약 정보를 저장하는 MutableLiveData
+    private val _reservations = MutableLiveData<MutableMap<CalendarDay, ReservationInfo>>()
+    val reservations: LiveData<MutableMap<CalendarDay, ReservationInfo>> get() = _reservations
+
+    init {
+        // 초기화 시 빈 예약 정보 맵 생성
+        _reservations.value = mutableMapOf()
     }
 
-    fun getReservation(date: String): Reservation? {
-        return reservations[date]
+    // 특정 날짜에 예약 추가
+    fun addReservation(date: CalendarDay, reservationInfo: ReservationInfo) {
+        val currentReservations = _reservations.value ?: mutableMapOf()
+        currentReservations[date] = reservationInfo
+        _reservations.value = currentReservations
     }
 
-    fun getAllReservations(): Map<String, Reservation> {
-        return reservations.toMap()
+    // 특정 날짜의 예약 정보 반환
+    fun getReservation(date: CalendarDay): ReservationInfo? {
+        return _reservations.value?.get(date)
+    }
+
+    // 모든 예약 정보 반환
+    fun getAllReservations(): Map<CalendarDay, ReservationInfo> {
+        return _reservations.value ?: emptyMap()
     }
 }

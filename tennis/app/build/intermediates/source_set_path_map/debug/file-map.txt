@@ -1,0 +1,57 @@
+com.example.tennis.app-jetified-lifecycle-process-2.8.4-0 C:\CookAndroid\.gradle\caches\transforms-3\0060bc6bc120d8eb01aced1784d49f9f\transformed\jetified-lifecycle-process-2.8.4\res
+com.example.tennis.app-jetified-lifecycle-runtime-release-1 C:\CookAndroid\.gradle\caches\transforms-3\0185b555ec9bb3f9e2eac41a3bc035ab\transformed\jetified-lifecycle-runtime-release\res
+com.example.tennis.app-media-1.0.0-2 C:\CookAndroid\.gradle\caches\transforms-3\01c9bc6ef95eb645bcbbc87c0685dbf2\transformed\media-1.0.0\res
+com.example.tennis.app-jetified-activity-1.8.0-3 C:\CookAndroid\.gradle\caches\transforms-3\02beae7b520d2588bdeeeb951aa6a2d2\transformed\jetified-activity-1.8.0\res
+com.example.tennis.app-jetified-viewpager2-1.1.0-beta02-4 C:\CookAndroid\.gradle\caches\transforms-3\037c2dbe4fcbc0b90ab7304a8cfaffaa\transformed\jetified-viewpager2-1.1.0-beta02\res
+com.example.tennis.app-jetified-play-services-maps-19.0.0-5 C:\CookAndroid\.gradle\caches\transforms-3\03fad41a404dcfdd6666ce7a7fe88e6f\transformed\jetified-play-services-maps-19.0.0\res
+com.example.tennis.app-jetified-activity-ktx-1.8.0-6 C:\CookAndroid\.gradle\caches\transforms-3\0f21b83db224ff1ba8afd47eded001ca\transformed\jetified-activity-ktx-1.8.0\res
+com.example.tennis.app-cardview-1.0.0-7 C:\CookAndroid\.gradle\caches\transforms-3\10ee96e8bb1558cc08d8ea9cb1d35324\transformed\cardview-1.0.0\res
+com.example.tennis.app-navigation-ui-2.7.7-8 C:\CookAndroid\.gradle\caches\transforms-3\114e4760857d5bd8d1de1eb4f6994f0a\transformed\navigation-ui-2.7.7\res
+com.example.tennis.app-jetified-lifecycle-viewmodel-ktx-2.8.4-9 C:\CookAndroid\.gradle\caches\transforms-3\156a8f48495a99775422f99c8132d83f\transformed\jetified-lifecycle-viewmodel-ktx-2.8.4\res
+com.example.tennis.app-lifecycle-livedata-2.8.4-10 C:\CookAndroid\.gradle\caches\transforms-3\18fd9f7a55533e115c1760f973d1084f\transformed\lifecycle-livedata-2.8.4\res
+com.example.tennis.app-coordinatorlayout-1.1.0-11 C:\CookAndroid\.gradle\caches\transforms-3\2172a64da61f82ddf171c4a68ed4459c\transformed\coordinatorlayout-1.1.0\res
+com.example.tennis.app-jetified-savedstate-ktx-1.2.1-12 C:\CookAndroid\.gradle\caches\transforms-3\2efe98efdd0cc766da75bfb645285478\transformed\jetified-savedstate-ktx-1.2.1\res
+com.example.tennis.app-jetified-annotation-experimental-1.4.0-13 C:\CookAndroid\.gradle\caches\transforms-3\37194a9d355baa0c69341303d9edafc8\transformed\jetified-annotation-experimental-1.4.0\res
+com.example.tennis.app-jetified-lifecycle-livedata-core-ktx-2.8.4-14 C:\CookAndroid\.gradle\caches\transforms-3\3868922a09868dc2161dfb05966d4ac8\transformed\jetified-lifecycle-livedata-core-ktx-2.8.4\res
+com.example.tennis.app-navigation-common-2.7.7-15 C:\CookAndroid\.gradle\caches\transforms-3\396899b4b02adfe8022116f9eecf7385\transformed\navigation-common-2.7.7\res
+com.example.tennis.app-jetified-lifecycle-runtime-ktx-release-16 C:\CookAndroid\.gradle\caches\transforms-3\3ed6881d9467fe15e26fd474a2b467b3\transformed\jetified-lifecycle-runtime-ktx-release\res
+com.example.tennis.app-navigation-runtime-2.7.7-17 C:\CookAndroid\.gradle\caches\transforms-3\3fe529874023f79e9e4ec318a25137cb\transformed\navigation-runtime-2.7.7\res
+com.example.tennis.app-jetified-fragment-ktx-1.6.2-18 C:\CookAndroid\.gradle\caches\transforms-3\40c96550295d85c8ffe115ed4025f818\transformed\jetified-fragment-ktx-1.6.2\res
+com.example.tennis.app-material-1.12.0-19 C:\CookAndroid\.gradle\caches\transforms-3\422fb11a53a51a8dabd900b6a5e55495\transformed\material-1.12.0\res
+com.example.tennis.app-jetified-play-services-base-18.5.0-20 C:\CookAndroid\.gradle\caches\transforms-3\5106c35416c4aa216fc6dea16b2ea301\transformed\jetified-play-services-base-18.5.0\res
+com.example.tennis.app-jetified-lifecycle-viewmodel-release-21 C:\CookAndroid\.gradle\caches\transforms-3\5272291bea07177d352d5dff617039c6\transformed\jetified-lifecycle-viewmodel-release\res
+com.example.tennis.app-navigation-fragment-ktx-2.7.7-22 C:\CookAndroid\.gradle\caches\transforms-3\5877255e9d1661cc011840123d9d8c10\transformed\navigation-fragment-ktx-2.7.7\res
+com.example.tennis.app-transition-1.5.0-23 C:\CookAndroid\.gradle\caches\transforms-3\58e0aaac02dc7f482f3f3ed93bda77b0\transformed\transition-1.5.0\res
+com.example.tennis.app-jetified-appcompat-resources-1.7.0-24 C:\CookAndroid\.gradle\caches\transforms-3\5ad05dd4f833582e37ee3458f62e6964\transformed\jetified-appcompat-resources-1.7.0\res
+com.example.tennis.app-jetified-play-services-basement-18.4.0-25 C:\CookAndroid\.gradle\caches\transforms-3\5b05658af1f73e0aaeefa1b5f8b69138\transformed\jetified-play-services-basement-18.4.0\res
+com.example.tennis.app-jetified-core-ktx-1.13.1-26 C:\CookAndroid\.gradle\caches\transforms-3\5b48e22aad1802d97b56e49456902b15\transformed\jetified-core-ktx-1.13.1\res
+com.example.tennis.app-slidingpanelayout-1.2.0-27 C:\CookAndroid\.gradle\caches\transforms-3\5be378f99868453d6b5a0961fcdb6077\transformed\slidingpanelayout-1.2.0\res
+com.example.tennis.app-recyclerview-1.3.2-28 C:\CookAndroid\.gradle\caches\transforms-3\5ce075bf225a78a836ee89524f605456\transformed\recyclerview-1.3.2\res
+com.example.tennis.app-jetified-lifecycle-viewmodel-savedstate-2.8.4-29 C:\CookAndroid\.gradle\caches\transforms-3\5d6bfdbd1422eefaaa2aee8428f11461\transformed\jetified-lifecycle-viewmodel-savedstate-2.8.4\res
+com.example.tennis.app-jetified-savedstate-1.2.1-30 C:\CookAndroid\.gradle\caches\transforms-3\633b83b0c297f9a3182a4953fd1bb7e4\transformed\jetified-savedstate-1.2.1\res
+com.example.tennis.app-jetified-lifecycle-livedata-ktx-2.8.4-31 C:\CookAndroid\.gradle\caches\transforms-3\6c2eb408296f60acdec9fee8c2b8dd87\transformed\jetified-lifecycle-livedata-ktx-2.8.4\res
+com.example.tennis.app-jetified-material-calendarview-2.0.1-32 C:\CookAndroid\.gradle\caches\transforms-3\6fcb8ffc08beb5f8f55c5cfa4236cf60\transformed\jetified-material-calendarview-2.0.1\res
+com.example.tennis.app-appcompat-1.7.0-33 C:\CookAndroid\.gradle\caches\transforms-3\710778239f89115b5394a8c885d7ff3f\transformed\appcompat-1.7.0\res
+com.example.tennis.app-lifecycle-livedata-core-2.8.4-34 C:\CookAndroid\.gradle\caches\transforms-3\73a075f429140ad1e67d3be98b39fc52\transformed\lifecycle-livedata-core-2.8.4\res
+com.example.tennis.app-navigation-common-ktx-2.7.7-35 C:\CookAndroid\.gradle\caches\transforms-3\73ea8094ff35daa24d83f3a09b6ccd30\transformed\navigation-common-ktx-2.7.7\res
+com.example.tennis.app-fragment-1.6.2-36 C:\CookAndroid\.gradle\caches\transforms-3\75b02cc3179b554e2e2d6bd8ac5867ef\transformed\fragment-1.6.2\res
+com.example.tennis.app-navigation-runtime-ktx-2.7.7-37 C:\CookAndroid\.gradle\caches\transforms-3\7811a87bf08c7ff4fa494f198a94d81a\transformed\navigation-runtime-ktx-2.7.7\res
+com.example.tennis.app-core-1.13.1-38 C:\CookAndroid\.gradle\caches\transforms-3\7eabbcc79abb4e5d4ac1137b884272ee\transformed\core-1.13.1\res
+com.example.tennis.app-jetified-emoji2-1.3.0-39 C:\CookAndroid\.gradle\caches\transforms-3\94846c6b9c2f86ceedb38b9c2f1a169c\transformed\jetified-emoji2-1.3.0\res
+com.example.tennis.app-constraintlayout-2.1.4-40 C:\CookAndroid\.gradle\caches\transforms-3\998ef4f9b62c622bd3d45459ddd02481\transformed\constraintlayout-2.1.4\res
+com.example.tennis.app-jetified-emoji2-views-helper-1.3.0-41 C:\CookAndroid\.gradle\caches\transforms-3\b434f299d2d506d87f72101e27442a94\transformed\jetified-emoji2-views-helper-1.3.0\res
+com.example.tennis.app-jetified-startup-runtime-1.1.1-42 C:\CookAndroid\.gradle\caches\transforms-3\c714897c36b571d9f4ea28b55f2c0607\transformed\jetified-startup-runtime-1.1.1\res
+com.example.tennis.app-navigation-fragment-2.7.7-43 C:\CookAndroid\.gradle\caches\transforms-3\cbde791c5a98f152a61c167be2e201d1\transformed\navigation-fragment-2.7.7\res
+com.example.tennis.app-jetified-customview-poolingcontainer-1.0.0-44 C:\CookAndroid\.gradle\caches\transforms-3\cd7e9bde926510fcb896ac676cd46f57\transformed\jetified-customview-poolingcontainer-1.0.0\res
+com.example.tennis.app-core-runtime-2.2.0-45 C:\CookAndroid\.gradle\caches\transforms-3\d23b9084cc324e39e6a83e59c7e67772\transformed\core-runtime-2.2.0\res
+com.example.tennis.app-jetified-window-1.0.0-46 C:\CookAndroid\.gradle\caches\transforms-3\f09b46fb0062eebfca5715c183ce74d5\transformed\jetified-window-1.0.0\res
+com.example.tennis.app-jetified-profileinstaller-1.3.1-47 C:\CookAndroid\.gradle\caches\transforms-3\f10728079102986335dc97cf38c7d8f5\transformed\jetified-profileinstaller-1.3.1\res
+com.example.tennis.app-navigation-ui-ktx-2.7.7-48 C:\CookAndroid\.gradle\caches\transforms-3\f9db1e74265ca30c885409446b1fe11f\transformed\navigation-ui-ktx-2.7.7\res
+com.example.tennis.app-drawerlayout-1.1.1-49 C:\CookAndroid\.gradle\caches\transforms-3\fa3e632a6bbb78d110cefbb25f61138d\transformed\drawerlayout-1.1.1\res
+com.example.tennis.app-pngs-50 C:\Users\cherr\OneDrive\git clone\Tennis-\tennis\app\build\generated\res\pngs\debug
+com.example.tennis.app-resValues-51 C:\Users\cherr\OneDrive\git clone\Tennis-\tennis\app\build\generated\res\resValues\debug
+com.example.tennis.app-packageDebugResources-52 C:\Users\cherr\OneDrive\git clone\Tennis-\tennis\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.tennis.app-packageDebugResources-53 C:\Users\cherr\OneDrive\git clone\Tennis-\tennis\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.tennis.app-merged_res-54 C:\Users\cherr\OneDrive\git clone\Tennis-\tennis\app\build\intermediates\merged_res\debug
+com.example.tennis.app-debug-55 C:\Users\cherr\OneDrive\git clone\Tennis-\tennis\app\src\debug\res
+com.example.tennis.app-main-56 C:\Users\cherr\OneDrive\git clone\Tennis-\tennis\app\src\main\res
