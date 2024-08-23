@@ -46,5 +46,4 @@ class MyCourtRecyclerViewAdapter(
             return super.toString() + " '" + contentView.text + "'"
         }
     }
-
 }

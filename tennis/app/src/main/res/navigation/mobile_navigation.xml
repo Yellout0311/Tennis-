@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/navigation_starred"
-        android:name="com.example.tennis.ui.courts.CourtFragment"
+        android:name="com.example.tennis.ui.starred.StarredCourtFragment"
         android:label="@string/title_starred"
         tools:layout="@layout/fragment_starred" />
 
