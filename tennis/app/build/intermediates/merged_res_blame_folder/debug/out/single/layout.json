@@ -1,0 +1,62 @@
+[
+    {
+        "merged": "C:\\CookAndroid\\.gradle\\daemon\\8.2\\com.example.tennis.app-mergeDebugResources-53:\\layout\\fragment_starred.xml",
+        "source": "C:\\CookAndroid\\.gradle\\daemon\\8.2\\com.example.tennis.app-main-56:\\layout\\fragment_starred.xml"
+    },
+    {
+        "merged": "C:\\CookAndroid\\.gradle\\daemon\\8.2\\com.example.tennis.app-mergeDebugResources-53:\\layout\\fragment_user_setting.xml",
+        "source": "C:\\CookAndroid\\.gradle\\daemon\\8.2\\com.example.tennis.app-main-56:\\layout\\fragment_user_setting.xml"
+    },
+    {
+        "merged": "C:\\CookAndroid\\.gradle\\daemon\\8.2\\com.example.tennis.app-mergeDebugResources-53:\\layout\\fragment_court.xml",
+        "source": "C:\\CookAndroid\\.gradle\\daemon\\8.2\\com.example.tennis.app-main-56:\\layout\\fragment_court.xml"
+    },
+    {
+        "merged": "C:\\CookAndroid\\.gradle\\daemon\\8.2\\com.example.tennis.app-mergeDebugResources-53:\\layout\\dialog_add_details.xml",
+        "source": "C:\\CookAndroid\\.gradle\\daemon\\8.2\\com.example.tennis.app-main-56:\\layout\\dialog_add_details.xml"
+    },
+    {
+        "merged": "C:\\CookAndroid\\.gradle\\daemon\\8.2\\com.example.tennis.app-mergeDebugResources-53:\\layout\\dialog_reservation.xml",
+        "source": "C:\\CookAndroid\\.gradle\\daemon\\8.2\\com.example.tennis.app-main-56:\\layout\\dialog_reservation.xml"
+    },
+    {
+        "merged": "C:\\CookAndroid\\.gradle\\daemon\\8.2\\com.example.tennis.app-mergeDebugResources-53:\\layout\\reservation_dialog.xml",
+        "source": "C:\\CookAndroid\\.gradle\\daemon\\8.2\\com.example.tennis.app-main-56:\\layout\\reservation_dialog.xml"
+    },
+    {
+        "merged": "com.example.tennis.app-mergeDebugResources-53:/layout/dialog_reservation.xml",
+        "source": "com.example.tennis.app-main-56:/layout/dialog_reservation.xml"
+    },
+    {
+        "merged": "C:\\CookAndroid\\.gradle\\daemon\\8.2\\com.example.tennis.app-mergeDebugResources-53:\\layout\\fragment_court_list.xml",
+        "source": "C:\\CookAndroid\\.gradle\\daemon\\8.2\\com.example.tennis.app-main-56:\\layout\\fragment_court_list.xml"
+    },
+    {
+        "merged": "C:\\CookAndroid\\.gradle\\daemon\\8.2\\com.example.tennis.app-mergeDebugResources-53:\\layout\\activity_main.xml",
+        "source": "C:\\CookAndroid\\.gradle\\daemon\\8.2\\com.example.tennis.app-main-56:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\CookAndroid\\.gradle\\daemon\\8.2\\com.example.tennis.app-mergeDebugResources-53:\\layout\\item_reservation.xml",
+        "source": "C:\\CookAndroid\\.gradle\\daemon\\8.2\\com.example.tennis.app-main-56:\\layout\\item_reservation.xml"
+    },
+    {
+        "merged": "C:\\CookAndroid\\.gradle\\daemon\\8.2\\com.example.tennis.app-mergeDebugResources-53:\\layout\\fragment_map_view.xml",
+        "source": "C:\\CookAndroid\\.gradle\\daemon\\8.2\\com.example.tennis.app-main-56:\\layout\\fragment_map_view.xml"
+    },
+    {
+        "merged": "C:\\CookAndroid\\.gradle\\daemon\\8.2\\com.example.tennis.app-mergeDebugResources-53:\\layout\\dialog_show_reservation.xml",
+        "source": "C:\\CookAndroid\\.gradle\\daemon\\8.2\\com.example.tennis.app-main-56:\\layout\\dialog_show_reservation.xml"
+    },
+    {
+        "merged": "C:\\CookAndroid\\.gradle\\daemon\\8.2\\com.example.tennis.app-mergeDebugResources-53:\\layout\\fragment_calendar.xml",
+        "source": "C:\\CookAndroid\\.gradle\\daemon\\8.2\\com.example.tennis.app-main-56:\\layout\\fragment_calendar.xml"
+    },
+    {
+        "merged": "C:\\CookAndroid\\.gradle\\daemon\\8.2\\com.example.tennis.app-mergeDebugResources-53:\\layout\\fragment_starred_list.xml",
+        "source": "C:\\CookAndroid\\.gradle\\daemon\\8.2\\com.example.tennis.app-main-56:\\layout\\fragment_starred_list.xml"
+    },
+    {
+        "merged": "C:\\CookAndroid\\.gradle\\daemon\\8.2\\com.example.tennis.app-mergeDebugResources-53:\\layout\\dialog_add_reservation.xml",
+        "source": "C:\\CookAndroid\\.gradle\\daemon\\8.2\\com.example.tennis.app-main-56:\\layout\\dialog_add_reservation.xml"
+    }
+]

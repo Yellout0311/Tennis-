@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.activity:activity-ktx:1.8.0@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/06b5ccd133e85e1ec2f4a0f86a0f3d98/transformed/activity-ktx-1.8.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/06b5ccd133e85e1ec2f4a0f86a0f3d98/transformed/activity-ktx-1.8.0/res" />
-      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/06b5ccd133e85e1ec2f4a0f86a0f3d98/transformed/activity-ktx-1.8.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/0f21b83db224ff1ba8afd47eded001ca/transformed/jetified-activity-ktx-1.8.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/0f21b83db224ff1ba8afd47eded001ca/transformed/jetified-activity-ktx-1.8.0/res" />
+      <root url="jar://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/0f21b83db224ff1ba8afd47eded001ca/transformed/jetified-activity-ktx-1.8.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

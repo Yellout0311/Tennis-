@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.annotation:annotation-experimental:1.4.0@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/935ca2afead505062205016701139742/transformed/annotation-experimental-1.4.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/935ca2afead505062205016701139742/transformed/annotation-experimental-1.4.0/res" />
-      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/935ca2afead505062205016701139742/transformed/annotation-experimental-1.4.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/37194a9d355baa0c69341303d9edafc8/transformed/jetified-annotation-experimental-1.4.0/res" />
+      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/37194a9d355baa0c69341303d9edafc8/transformed/jetified-annotation-experimental-1.4.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/37194a9d355baa0c69341303d9edafc8/transformed/jetified-annotation-experimental-1.4.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

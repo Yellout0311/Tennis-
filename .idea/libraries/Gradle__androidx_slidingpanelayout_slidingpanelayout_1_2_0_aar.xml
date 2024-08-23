@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.slidingpanelayout:slidingpanelayout:1.2.0@aar" external-system-id="GRADLE">
     <ANNOTATIONS>
-      <root url="jar://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/166371013c1b26801a4aa8bcafa92ace/transformed/slidingpanelayout-1.2.0/annotations.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/5be378f99868453d6b5a0961fcdb6077/transformed/slidingpanelayout-1.2.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/166371013c1b26801a4aa8bcafa92ace/transformed/slidingpanelayout-1.2.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/166371013c1b26801a4aa8bcafa92ace/transformed/slidingpanelayout-1.2.0/res" />
-      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/166371013c1b26801a4aa8bcafa92ace/transformed/slidingpanelayout-1.2.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/5be378f99868453d6b5a0961fcdb6077/transformed/slidingpanelayout-1.2.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/5be378f99868453d6b5a0961fcdb6077/transformed/slidingpanelayout-1.2.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/5be378f99868453d6b5a0961fcdb6077/transformed/slidingpanelayout-1.2.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

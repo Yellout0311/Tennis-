@@ -1,0 +1,5 @@
+com.example.tennis.test.app-jetified-core-1.6.1-0 C:\CookAndroid\.gradle\caches\transforms-3\369d8d57409d4fcfa46f1f814e3f9827\transformed\jetified-core-1.6.1\res
+com.example.tennis.test.app-androidTest-1 C:\Users\cherr\OneDrive\git clone\Tennis-\tennis\app\build\generated\res\resValues\androidTest\debug
+com.example.tennis.test.app-mergeDebugAndroidTestResources-2 C:\Users\cherr\OneDrive\git clone\Tennis-\tennis\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.tennis.test.app-mergeDebugAndroidTestResources-3 C:\Users\cherr\OneDrive\git clone\Tennis-\tennis\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.tennis.test.app-merged_res-4 C:\Users\cherr\OneDrive\git clone\Tennis-\tennis\app\build\intermediates\merged_res\debugAndroidTest

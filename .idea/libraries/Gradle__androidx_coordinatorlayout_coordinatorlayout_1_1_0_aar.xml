@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.coordinatorlayout:coordinatorlayout:1.1.0@aar" external-system-id="GRADLE">
     <ANNOTATIONS>
-      <root url="jar://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/2b0959dc2a15a43f6e92c044116da025/transformed/coordinatorlayout-1.1.0/annotations.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/2172a64da61f82ddf171c4a68ed4459c/transformed/coordinatorlayout-1.1.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/2b0959dc2a15a43f6e92c044116da025/transformed/coordinatorlayout-1.1.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/2b0959dc2a15a43f6e92c044116da025/transformed/coordinatorlayout-1.1.0/res" />
-      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/2b0959dc2a15a43f6e92c044116da025/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/2172a64da61f82ddf171c4a68ed4459c/transformed/coordinatorlayout-1.1.0/res" />
+      <root url="jar://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/2172a64da61f82ddf171c4a68ed4459c/transformed/coordinatorlayout-1.1.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/2172a64da61f82ddf171c4a68ed4459c/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

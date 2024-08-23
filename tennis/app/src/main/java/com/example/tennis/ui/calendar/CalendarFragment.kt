@@ -1,11 +1,8 @@
 package com.example.tennis.ui.calendar
 
-import CalendarViewModel
 import android.app.AlertDialog
-import android.graphics.Bitmap
-import android.graphics.Canvas
-import android.graphics.Paint
-import android.graphics.drawable.BitmapDrawable
+import android.app.DatePickerDialog
+import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -13,161 +10,134 @@ import android.view.ViewGroup
 import android.widget.*
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import com.example.tennis.R
-import com.example.tennis.databinding.FragmentCalendarBinding
-import java.text.SimpleDateFormat
+import com.prolificinteractive.materialcalendarview.*
 import java.util.*
+import com.example.tennis.R
 
-class CalendarFragment : Fragment() {
-
-    private var _binding: FragmentCalendarBinding? = null
-    private val binding get() = _binding!!
+class CalendarFragment : Fragment(), OnDateSelectedListener {
 
     private val viewModel: CalendarViewModel by viewModels()
-    private lateinit var calendarOverlay: View
+    private lateinit var calendarView: MaterialCalendarView
+    private lateinit var tvReservationInfo: TextView
+    private lateinit var btnAddReservation: Button
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
-        _binding = FragmentCalendarBinding.inflate(inflater, container, false)
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        val view = inflater.inflate(R.layout.fragment_calendar, container, false)
+        calendarView = view.findViewById(R.id.calendarView)
+        tvReservationInfo = view.findViewById(R.id.tvReserveDay) //여기 이상하게 수정하긴 했는데 작동이 되긴함
+        btnAddReservation = view.findViewById(R.id.btnAddReservation)
 
-        calendarOverlay = binding.root.findViewById(R.id.calendarOverlay)
-
-        binding.btnAddReservation.setOnClickListener {
-            openAddReservationDialog()
-        }
-
-        binding.calendarView.setOnDateChangeListener { _, year, month, dayOfMonth ->
-            updateCalendar()
-            val selectedDate = "$year-${month + 1}-$dayOfMonth"
-            showReservationDetails(selectedDate)
-        }
-
-        return binding.root
+        return view
     }
 
-    private fun updateCalendar() {
-        val calendarView = binding.calendarView
-        val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
-        // Clear previous drawings
-        calendarOverlay.background = null
+        calendarView.setOnDateChangedListener(this)
 
-        viewModel.getAllReservations().forEach { (dateString, reservation) ->
-            val date = dateFormat.parse(dateString)
-            val calendar = Calendar.getInstance()
-            calendar.time = date ?: return@forEach
-            drawMarker(
-                calendar.get(Calendar.YEAR),
-                calendar.get(Calendar.MONTH),
-                calendar.get(Calendar.DAY_OF_MONTH),
-                reservation.color
-            )
+        btnAddReservation.setOnClickListener {
+            showDatePickerDialog()
         }
+
+        viewModel.reservations.observe(viewLifecycleOwner) {
+            updateCalendarView()
+        }
+
+        updateCalendarView()
     }
-    private fun drawMarker(year: Int, month: Int, day: Int, color: Int) {
+
+    private fun showDatePickerDialog() {
         val calendar = Calendar.getInstance()
-        calendar.set(year, month, day)
-
-        val cellWidth = binding.calendarView.width / 7f
-        val cellHeight = (binding.calendarView.height - binding.calendarView.paddingTop - binding.calendarView.paddingBottom) / 6f
-
-        val weekOfMonth = calendar.get(Calendar.WEEK_OF_MONTH) - 1
-        val dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK) - 1
-
-        val x = dayOfWeek * cellWidth + cellWidth / 2
-        val y = weekOfMonth * cellHeight + cellHeight / 2 + binding.calendarView.paddingTop
-
-        val bitmap = (calendarOverlay.background as? BitmapDrawable)?.bitmap
-            ?: Bitmap.createBitmap(calendarOverlay.width, calendarOverlay.height, Bitmap.Config.ARGB_8888)
-        val canvas = Canvas(bitmap)
-        val paint = Paint().apply {
-            this.color = color
-            style = Paint.Style.FILL
-            alpha = 128 // 반투명 설정 (0-255)
-        }
-
-        canvas.drawCircle(x, y, cellWidth / 4, paint)
-
-        calendarOverlay.background = BitmapDrawable(resources, bitmap)
+        DatePickerDialog(
+            requireContext(),
+            { _, year, month, day ->
+                val selectedDate = CalendarDay.from(year, month + 1, day)
+                showReservationDialog(selectedDate)
+            },
+            calendar.get(Calendar.YEAR),
+            calendar.get(Calendar.MONTH),
+            calendar.get(Calendar.DAY_OF_MONTH)
+        ).show()
     }
 
-    private fun showReservationDetails(date: String) {
-        val reservation = viewModel.getReservation(date)
-        reservation?.let {
-            val details = """
-                예약 날짜: ${it.date}
-                시간: ${it.hour}:${it.minute}
-                코트 번호: ${it.courtNumber}
-                옵션: ${it.option}
-            """.trimIndent()
-
-            AlertDialog.Builder(requireContext())
-                .setTitle("예약 세부사항")
-                .setMessage(details)
-                .setPositiveButton("확인", null)
-                .create()
-                .show()
-        } ?: run {
-            Toast.makeText(requireContext(), "예약된 일정이 없습니다.", Toast.LENGTH_SHORT).show()
-        }
-    }
-
-    private fun openAddReservationDialog() {
-        val dialogView = LayoutInflater.from(context).inflate(R.layout.dialog_add_reservation, null)
-        val calendarView = dialogView.findViewById<CalendarView>(R.id.dialogCalendarView)
-
-        val builder = AlertDialog.Builder(requireContext())
-            .setView(dialogView)
-            .setTitle("예약 추가")
-            .setNegativeButton("취소", null)
-            .setPositiveButton("확인") { _, _ ->
-                val selectedDate = Date(calendarView.date)
-                openAddDetailsDialog(selectedDate)
-            }
-        builder.create().show()
-    }
-
-    private fun openAddDetailsDialog(selectedDate: Date) {
-        val dialogView = LayoutInflater.from(context).inflate(R.layout.dialog_add_details, null)
+    private fun showReservationDialog(date: CalendarDay) {
+        val dialogView = layoutInflater.inflate(R.layout.dialog_reservation, null)
         val timePicker = dialogView.findViewById<TimePicker>(R.id.timePicker)
-        val courtNumberEditText = dialogView.findViewById<EditText>(R.id.etCourtNumber)
-        val optionsRadioGroup = dialogView.findViewById<RadioGroup>(R.id.rgOptions)
-        val confirmButton = dialogView.findViewById<Button>(R.id.btnConfirmDetails)
+        val etCourtNumber = dialogView.findViewById<EditText>(R.id.etCourtNumber)
+        val radioGroup = dialogView.findViewById<RadioGroup>(R.id.radioGroup)
+        val etMemo = dialogView.findViewById<EditText>(R.id.etMemo)
 
-        // 24시간 형식을 설정
-        timePicker.setIs24HourView(true)
+        AlertDialog.Builder(requireContext())
+            .setView(dialogView)
+            .setPositiveButton("확인") { _, _ ->
+                val hour = timePicker.hour
+                val minute = timePicker.minute
+                val courtNumber = etCourtNumber.text.toString()
+                val isReservationDay = radioGroup.checkedRadioButtonId == R.id.rbReservationDate
+                val memo = etMemo.text.toString()
+
+                val reservationInfo = ReservationInfo(hour, minute, courtNumber, isReservationDay, memo)
+                viewModel.addReservation(date, reservationInfo)
+
+                updateCalendarView()
+            }
+            .setNegativeButton("취소", null)
+            .show()
+    }
+    private fun showSavedReservationDialog(reservationInfo: ReservationInfo) {
+        val dialogView = layoutInflater.inflate(R.layout.dialog_show_reservation, null)
+        val tvTime = dialogView.findViewById<TextView>(R.id.tvShowReservationTime)
+        val tvCourtNumber = dialogView.findViewById<TextView>(R.id.tvShowReservationCourtNumber)
+        val tvType = dialogView.findViewById<TextView>(R.id.tvShowReservationType)
+        val tvMemo = dialogView.findViewById<TextView>(R.id.tvShowReservationMemo)
+        val btnClose = dialogView.findViewById<Button>(R.id.btnClose)
+
+        // 예약 정보 설정
+        tvTime.text = "시간: ${reservationInfo.hour}:${reservationInfo.minute}"
+        tvCourtNumber.text = "코트 번호: ${reservationInfo.courtNumber}"
+        tvType.text = "예약 유형: ${if (reservationInfo.isReservationDay) "예약일" else "예매일"}"
+        tvMemo.text = "메모: ${reservationInfo.memo}"
 
         val dialog = AlertDialog.Builder(requireContext())
             .setView(dialogView)
-            .setTitle("세부사항 입력")
-            .setNegativeButton("취소", null)
             .create()
 
-        confirmButton.setOnClickListener {
-            val hour = timePicker.hour
-            val minute = timePicker.minute
-            val courtNumber = courtNumberEditText.text.toString().toIntOrNull() ?: 0
-            val selectedOption = when (optionsRadioGroup.checkedRadioButtonId) {
-                R.id.rbReservationDate -> "예약일"
-                R.id.rbBookingDate -> "예매일"
-                else -> "예약일"
-            }
-
-            viewModel.addReservation(
-                selectedDate,
-                hour,
-                minute,
-                courtNumber,
-                selectedOption
-            )
-
+        btnClose.setOnClickListener {
             dialog.dismiss()
-            updateCalendar()
         }
 
         dialog.show()
     }
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
+
+    private fun updateCalendarView() {
+        calendarView.removeDecorators()
+
+        val reservationDays = viewModel.getAllReservations().filter { it.value.isReservationDay }.keys
+        val bookingDays = viewModel.getAllReservations().filter { !it.value.isReservationDay }.keys
+
+        calendarView.addDecorator(EventDecorator(Color.BLUE, reservationDays))
+        calendarView.addDecorator(EventDecorator(Color.RED, bookingDays))
+    }
+
+    override fun onDateSelected(widget: MaterialCalendarView, date: CalendarDay, selected: Boolean) {
+        val reservationInfo = viewModel.getReservation(date)
+        if (reservationInfo != null) {
+            // 예약 정보가 있을 때는 저장된 예약 정보를 보여주는 다이얼로그를 띄움
+            showSavedReservationDialog(reservationInfo)
+        } else {
+            // 예약 정보가 없을 때는 새 예약을 추가하는 다이얼로그를 띄움
+            showReservationDialog(date)
+        }
     }
 }
+
+data class ReservationInfo(
+    val hour: Int,
+    val minute: Int,
+    val courtNumber: String,
+    val isReservationDay: Boolean,
+    val memo: String
+)
