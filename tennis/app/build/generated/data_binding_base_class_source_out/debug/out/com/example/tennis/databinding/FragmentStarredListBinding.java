@@ -17,12 +17,12 @@ public final class FragmentStarredListBinding implements ViewBinding {
   private final RecyclerView rootView;
 
   @NonNull
-  public final RecyclerView courtList;
+  public final RecyclerView starredCourtList;
 
   private FragmentStarredListBinding(@NonNull RecyclerView rootView,
-      @NonNull RecyclerView courtList) {
+      @NonNull RecyclerView starredCourtList) {
     this.rootView = rootView;
-    this.courtList = courtList;
+    this.starredCourtList = starredCourtList;
   }
 
   @Override
@@ -52,8 +52,8 @@ public final class FragmentStarredListBinding implements ViewBinding {
       throw new NullPointerException("rootView");
     }
 
-    RecyclerView courtList = (RecyclerView) rootView;
+    RecyclerView starredCourtList = (RecyclerView) rootView;
 
-    return new FragmentStarredListBinding((RecyclerView) rootView, courtList);
+    return new FragmentStarredListBinding((RecyclerView) rootView, starredCourtList);
   }
 }

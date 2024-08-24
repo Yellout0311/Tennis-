@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.lifecycle:lifecycle-livedata-ktx:2.8.4@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/6c2eb408296f60acdec9fee8c2b8dd87/transformed/jetified-lifecycle-livedata-ktx-2.8.4/res" />
-      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/6c2eb408296f60acdec9fee8c2b8dd87/transformed/jetified-lifecycle-livedata-ktx-2.8.4/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/6c2eb408296f60acdec9fee8c2b8dd87/transformed/jetified-lifecycle-livedata-ktx-2.8.4/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/b40f4e8d2601c689f9daf01e339e3013/transformed/jetified-lifecycle-livedata-ktx-2.8.4/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/b40f4e8d2601c689f9daf01e339e3013/transformed/jetified-lifecycle-livedata-ktx-2.8.4/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/b40f4e8d2601c689f9daf01e339e3013/transformed/jetified-lifecycle-livedata-ktx-2.8.4/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

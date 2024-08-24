@@ -12,6 +12,10 @@
 #   public *;
 #}
 
+-keepclassmembers class * implements javax.net.ssl.SSLSocketFactory {
+    private javax.net.ssl.SSLSocketFactory delegate;
+}
+
 # Uncomment this to preserve the line number information for
 # debugging stack traces.
 #-keepattributes SourceFile,LineNumberTable

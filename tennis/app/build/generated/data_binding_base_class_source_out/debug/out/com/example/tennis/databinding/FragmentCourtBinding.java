@@ -32,9 +32,6 @@ public final class FragmentCourtBinding implements ViewBinding {
   public final ImageView courtImage;
 
   @NonNull
-  public final TextView itemNumber;
-
-  @NonNull
   public final ImageButton starBtn;
 
   @NonNull
@@ -44,14 +41,12 @@ public final class FragmentCourtBinding implements ViewBinding {
   public final TextView textCourtName;
 
   private FragmentCourtBinding(@NonNull LinearLayout rootView, @NonNull Button courtBtnInfo,
-      @NonNull Button courtBtnReserv, @NonNull ImageView courtImage, @NonNull TextView itemNumber,
-      @NonNull ImageButton starBtn, @NonNull TextView textCourtInfo,
-      @NonNull TextView textCourtName) {
+      @NonNull Button courtBtnReserv, @NonNull ImageView courtImage, @NonNull ImageButton starBtn,
+      @NonNull TextView textCourtInfo, @NonNull TextView textCourtName) {
     this.rootView = rootView;
     this.courtBtnInfo = courtBtnInfo;
     this.courtBtnReserv = courtBtnReserv;
     this.courtImage = courtImage;
-    this.itemNumber = itemNumber;
     this.starBtn = starBtn;
     this.textCourtInfo = textCourtInfo;
     this.textCourtName = textCourtName;
@@ -102,12 +97,6 @@ public final class FragmentCourtBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.item_number;
-      TextView itemNumber = ViewBindings.findChildViewById(rootView, id);
-      if (itemNumber == null) {
-        break missingId;
-      }
-
       id = R.id.star_btn;
       ImageButton starBtn = ViewBindings.findChildViewById(rootView, id);
       if (starBtn == null) {
@@ -127,7 +116,7 @@ public final class FragmentCourtBinding implements ViewBinding {
       }
 
       return new FragmentCourtBinding((LinearLayout) rootView, courtBtnInfo, courtBtnReserv,
-          courtImage, itemNumber, starBtn, textCourtInfo, textCourtName);
+          courtImage, starBtn, textCourtInfo, textCourtName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

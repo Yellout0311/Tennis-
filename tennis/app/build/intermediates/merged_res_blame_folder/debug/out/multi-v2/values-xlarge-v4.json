@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.tennis.app-mergeDebugResources-52:/values-xlarge-v4/values-xlarge-v4.xml",
+            "outputFile": "com.example.tennis.app-mergeDebugResources-53:/values-xlarge-v4/values-xlarge-v4.xml",
             "map": [
                 {
-                    "source": "C:\\CookAndroid\\.gradle\\caches\\transforms-3\\710778239f89115b5394a8c885d7ff3f\\transformed\\appcompat-1.7.0\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
+                    "source": "C:\\CookAndroid\\.gradle\\caches\\transforms-3\\0631cf463a517c92fc1db1645511118d\\transformed\\appcompat-1.7.0\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",

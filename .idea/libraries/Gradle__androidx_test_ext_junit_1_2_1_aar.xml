@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.test.ext:junit:1.2.1@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/4139ca5fcfee82341809bd4ffa4db0e6/transformed/jetified-junit-1.2.1/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/4139ca5fcfee82341809bd4ffa4db0e6/transformed/jetified-junit-1.2.1/jars/classes.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/a6eb6b1713ce7c40b1dfa15b2c4d812b/transformed/jetified-junit-1.2.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/a6eb6b1713ce7c40b1dfa15b2c4d812b/transformed/jetified-junit-1.2.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

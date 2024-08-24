@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.navigation:navigation-ui-ktx:2.7.7@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/f9db1e74265ca30c885409446b1fe11f/transformed/navigation-ui-ktx-2.7.7/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/f9db1e74265ca30c885409446b1fe11f/transformed/navigation-ui-ktx-2.7.7/AndroidManifest.xml" />
-      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/f9db1e74265ca30c885409446b1fe11f/transformed/navigation-ui-ktx-2.7.7/res" />
+      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/cd3b80e4350132c410ebbf00a83322ef/transformed/navigation-ui-ktx-2.7.7/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/cd3b80e4350132c410ebbf00a83322ef/transformed/navigation-ui-ktx-2.7.7/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/cd3b80e4350132c410ebbf00a83322ef/transformed/navigation-ui-ktx-2.7.7/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

@@ -3247,6 +3247,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable placeholder_image
 drawable red_rounded_box
 drawable tennis
 drawable test_level_drawable
@@ -3392,6 +3393,10 @@ id continuousVelocity
 id coordinator
 id cos
 id counterclockwise
+id courtAddressTextView
+id courtImageView
+id courtNameTextView
+id courtPhoneTextView
 id court_btn_info
 id court_btn_reserv
 id court_image
@@ -3474,6 +3479,7 @@ id frost
 id fullscreen_header
 id ghost_view
 id ghost_view_holder
+id glide_custom_view_target_tag
 id gone
 id graph
 id graph_wrap
@@ -3731,6 +3737,7 @@ id src_in
 id src_over
 id standard
 id star_btn
+id starred_court_list
 id start
 id startHorizontal
 id startToEnd
@@ -3966,6 +3973,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dialog_court_details
 layout dialog_reservation
 layout dialog_show_reservation
 layout fragment_calendar
@@ -5559,3 +5567,4 @@ styleable ViewTransition android_id SharedValue SharedValueId clearsTag duration
 styleable include constraintSet
 xml backup_rules
 xml data_extraction_rules
+xml network_security_config
