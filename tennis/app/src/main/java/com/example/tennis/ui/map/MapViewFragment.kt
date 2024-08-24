@@ -1,36 +1,89 @@
 package com.example.tennis.ui.map
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.tennis.R
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.maps.model.MarkerOptions
+import com.example.tennis.R
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
+import okhttp3.OkHttpClient
+import okhttp3.Request
+import org.json.JSONObject
 
 class MapViewFragment : Fragment(), OnMapReadyCallback {
-    private lateinit var googleMap: GoogleMap
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view = inflater.inflate(R.layout.fragment_map_view, container, false)
+    private lateinit var mMap: GoogleMap
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        val rootView = inflater.inflate(R.layout.fragment_map_view, container, false)
 
         val mapFragment = childFragmentManager.findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
 
-        return view
+        return rootView
     }
 
-    override fun onMapReady(map: GoogleMap) {
-        googleMap = map
+    override fun onMapReady(googleMap: GoogleMap) {
+        mMap = googleMap
 
-        // 지도 설정 및 기능 구현
-        val latLng = LatLng(37.5665, 126.9780) // 서울 좌표
-        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 12f))
+        val seoul = LatLng(37.5665, 126.9780)
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(seoul, 12f))
 
-        // 마커 추가, 줌 제어, 클릭 이벤트 처리 등의 기능 구현
+        fetchTennisCourtData()
+    }
+
+    private fun fetchTennisCourtData() {
+        val url = "http://openapi.seoul.go.kr:8088/576e4e6c6779656c36355368686444/json/ListPublicReservationSport/1/200/테니스장"
+
+        GlobalScope.launch(Dispatchers.IO) {
+            try {
+                val client = OkHttpClient()
+                val request = Request.Builder()
+                    .url(url)
+                    .build()
+
+                val response = client.newCall(request).execute()
+                val jsonData = response.body?.string()
+
+                if (jsonData != null) {
+                    val jsonObject = JSONObject(jsonData)
+                    val rows = jsonObject.getJSONObject("ListPublicReservationSport").getJSONArray("row")
+
+                    for (i in 0 until rows.length()) {
+                        val court = rows.getJSONObject(i)
+                        val name = court.getString("PLACENM")
+                        val lat = court.getDouble("Y")
+                        val lng = court.getDouble("X")
+                        val imgURL = court.getString("IMGURL")
+                        val phone = court.getString("TELNO")
+
+                        val snippet = "전화번호: $phone\n이미지: $imgURL"
+
+                        launch(Dispatchers.Main) {
+                            val position = LatLng(lat, lng)
+                            mMap.addMarker(MarkerOptions()
+                                .position(position)
+                                .title(name)
+                                .snippet(snippet))
+                        }
+                    }
+                }
+            } catch (e: Exception) {
+                Log.e("MapViewFragment", "Error fetching data: ${e.message}")
+            }
+        }
     }
 }

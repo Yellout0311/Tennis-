@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.fragment:fragment:1.6.2@aar" external-system-id="GRADLE">
     <ANNOTATIONS>
-      <root url="jar://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/75b02cc3179b554e2e2d6bd8ac5867ef/transformed/fragment-1.6.2/annotations.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/dd0c3174af50f5415bcd3680c2d32ccd/transformed/fragment-1.6.2/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/75b02cc3179b554e2e2d6bd8ac5867ef/transformed/fragment-1.6.2/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/75b02cc3179b554e2e2d6bd8ac5867ef/transformed/fragment-1.6.2/res" />
-      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/75b02cc3179b554e2e2d6bd8ac5867ef/transformed/fragment-1.6.2/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/dd0c3174af50f5415bcd3680c2d32ccd/transformed/fragment-1.6.2/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/dd0c3174af50f5415bcd3680c2d32ccd/transformed/fragment-1.6.2/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/dd0c3174af50f5415bcd3680c2d32ccd/transformed/fragment-1.6.2/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

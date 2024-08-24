@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.lifecycle:lifecycle-livedata:2.8.4@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/18fd9f7a55533e115c1760f973d1084f/transformed/lifecycle-livedata-2.8.4/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/18fd9f7a55533e115c1760f973d1084f/transformed/lifecycle-livedata-2.8.4/res" />
-      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/18fd9f7a55533e115c1760f973d1084f/transformed/lifecycle-livedata-2.8.4/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/e6583198d65b92240f6045de79b2c34d/transformed/lifecycle-livedata-2.8.4/res" />
+      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/e6583198d65b92240f6045de79b2c34d/transformed/lifecycle-livedata-2.8.4/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/e6583198d65b92240f6045de79b2c34d/transformed/lifecycle-livedata-2.8.4/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.core:core-ktx:1.13.1@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/5b48e22aad1802d97b56e49456902b15/transformed/jetified-core-ktx-1.13.1/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/5b48e22aad1802d97b56e49456902b15/transformed/jetified-core-ktx-1.13.1/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/5b48e22aad1802d97b56e49456902b15/transformed/jetified-core-ktx-1.13.1/res" />
+      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/868c1574b006d066718767c382fe6ddb/transformed/jetified-core-ktx-1.13.1/res" />
+      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/868c1574b006d066718767c382fe6ddb/transformed/jetified-core-ktx-1.13.1/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/868c1574b006d066718767c382fe6ddb/transformed/jetified-core-ktx-1.13.1/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

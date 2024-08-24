@@ -1,7 +1,9 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("com.google.devtools.ksp")
 }
+
 
 android {
     namespace = "com.example.tennis"
@@ -60,4 +62,14 @@ dependencies {
 //calender
     implementation("com.github.prolificinteractive:material-calendarview:2.0.1")
     implementation("com.jakewharton.threetenabp:threetenabp:1.2.1")
+
+    implementation("com.google.maps:google-maps-services:0.15.0")
+    implementation("org.slf4j:slf4j-simple:1.7.25")
+    implementation("com.squareup.retrofit2:retrofit:2.9.0") // HTTP 클라이언트 라이브러리 (서울시 공공데이터 API 요청을 위해 사용)
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0") // JSON 변환을 위한 GSON 컨버터
+    implementation("com.squareup.okhttp3:okhttp:4.10.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.10.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+
+    implementation("com.github.bumptech.glide:glide:4.15.1")
 }

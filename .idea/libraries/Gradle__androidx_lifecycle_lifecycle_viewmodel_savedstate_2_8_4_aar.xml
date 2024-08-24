@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.4@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/5d6bfdbd1422eefaaa2aee8428f11461/transformed/jetified-lifecycle-viewmodel-savedstate-2.8.4/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/5d6bfdbd1422eefaaa2aee8428f11461/transformed/jetified-lifecycle-viewmodel-savedstate-2.8.4/AndroidManifest.xml" />
-      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/5d6bfdbd1422eefaaa2aee8428f11461/transformed/jetified-lifecycle-viewmodel-savedstate-2.8.4/res" />
+      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/845560e8b16dd5e4b34c00e23f0d3254/transformed/jetified-lifecycle-viewmodel-savedstate-2.8.4/res" />
+      <root url="file://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/845560e8b16dd5e4b34c00e23f0d3254/transformed/jetified-lifecycle-viewmodel-savedstate-2.8.4/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../../../CookAndroid/.gradle/caches/transforms-3/845560e8b16dd5e4b34c00e23f0d3254/transformed/jetified-lifecycle-viewmodel-savedstate-2.8.4/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
