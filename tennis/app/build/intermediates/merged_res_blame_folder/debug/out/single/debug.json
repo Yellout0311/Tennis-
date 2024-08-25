@@ -36,6 +36,10 @@
         "source": "C:\\CookAndroid\\.gradle\\daemon\\8.2\\com.example.tennis.app-main-57:\\navigation\\mobile_navigation.xml"
     },
     {
+        "merged": "C:\\CookAndroid\\.gradle\\daemon\\8.2\\com.example.tennis.app-merged_res-55:\\layout_dialog_court_info.xml.flat",
+        "source": "C:\\CookAndroid\\.gradle\\daemon\\8.2\\com.example.tennis.app-main-57:\\layout\\dialog_court_info.xml"
+    },
+    {
         "merged": "C:\\CookAndroid\\.gradle\\daemon\\8.2\\com.example.tennis.app-merged_res-55:\\drawable_placeholder_image.xml.flat",
         "source": "C:\\CookAndroid\\.gradle\\daemon\\8.2\\com.example.tennis.app-main-57:\\drawable\\placeholder_image.xml"
     },
@@ -84,6 +88,10 @@
         "source": "C:\\CookAndroid\\.gradle\\daemon\\8.2\\com.example.tennis.app-main-57:\\xml\\backup_rules.xml"
     },
     {
+        "merged": "com.example.tennis.app-merged_res-55:/drawable_ic_content_copy.xml.flat",
+        "source": "com.example.tennis.app-main-57:/drawable/ic_content_copy.xml"
+    },
+    {
         "merged": "C:\\CookAndroid\\.gradle\\daemon\\8.2\\com.example.tennis.app-merged_res-55:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\CookAndroid\\.gradle\\daemon\\8.2\\com.example.tennis.app-main-57:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
@@ -110,10 +118,6 @@
     {
         "merged": "C:\\CookAndroid\\.gradle\\daemon\\8.2\\com.example.tennis.app-merged_res-55:\\layout_dialog_court_details.xml.flat",
         "source": "C:\\CookAndroid\\.gradle\\daemon\\8.2\\com.example.tennis.app-main-57:\\layout\\dialog_court_details.xml"
-    },
-    {
-        "merged": "com.example.tennis.app-merged_res-55:/layout_dialog_court_details.xml.flat",
-        "source": "com.example.tennis.app-main-57:/layout/dialog_court_details.xml"
     },
     {
         "merged": "C:\\CookAndroid\\.gradle\\daemon\\8.2\\com.example.tennis.app-merged_res-55:\\layout_fragment_starred.xml.flat",
@@ -150,6 +154,10 @@
     {
         "merged": "C:\\CookAndroid\\.gradle\\daemon\\8.2\\com.example.tennis.app-merged_res-55:\\layout_fragment_calendar.xml.flat",
         "source": "C:\\CookAndroid\\.gradle\\daemon\\8.2\\com.example.tennis.app-main-57:\\layout\\fragment_calendar.xml"
+    },
+    {
+        "merged": "com.example.tennis.app-merged_res-55:/layout_dialog_court_info.xml.flat",
+        "source": "com.example.tennis.app-main-57:/layout/dialog_court_info.xml"
     },
     {
         "merged": "C:\\CookAndroid\\.gradle\\daemon\\8.2\\com.example.tennis.app-merged_res-55:\\mipmap-xhdpi_ic_launcher_round.webp.flat",

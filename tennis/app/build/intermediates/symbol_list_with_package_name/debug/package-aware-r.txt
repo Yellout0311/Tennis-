@@ -3157,6 +3157,7 @@ drawable ic_call_decline
 drawable ic_call_decline_low
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
+drawable ic_content_copy
 drawable ic_dashboard_black_24dp
 drawable ic_home_black_24dp
 drawable ic_keyboard_black_24dp
@@ -3393,10 +3394,6 @@ id continuousVelocity
 id coordinator
 id cos
 id counterclockwise
-id courtAddressTextView
-id courtImageView
-id courtNameTextView
-id courtPhoneTextView
 id court_btn_info
 id court_btn_reserv
 id court_image
@@ -3513,6 +3510,7 @@ id is_pooling_container_tag
 id italic
 id item_number
 id item_touch_helper_previous_elevation
+id ivCourtImage
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -3806,6 +3804,9 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id tuesday
+id tvCourtAddress
+id tvCourtName
+id tvCourtPhone
 id tvReserveDay
 id tvReservedSchedule
 id tvShowReservationCourtNumber
@@ -3973,7 +3974,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout dialog_court_details
+layout dialog_court_info
 layout dialog_reservation
 layout dialog_show_reservation
 layout fragment_calendar
