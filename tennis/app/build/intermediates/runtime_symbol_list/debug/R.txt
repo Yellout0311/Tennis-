@@ -3156,6 +3156,7 @@ int drawable ic_call_decline 0x7f0700a3
 int drawable ic_call_decline_low 0x7f0700a4
 int drawable ic_clear_black_24 0x7f0700a5
 int drawable ic_clock_black_24dp 0x7f0700a6
+int drawable ic_content_copy 0x7f070107
 int drawable ic_dashboard_black_24dp 0x7f0700a7
 int drawable ic_home_black_24dp 0x7f0700a8
 int drawable ic_keyboard_black_24dp 0x7f0700a9
@@ -3392,10 +3393,6 @@ int id continuousVelocity 0x7f080088
 int id coordinator 0x7f080089
 int id cos 0x7f08008a
 int id counterclockwise 0x7f08008b
-int id courtAddressTextView 0x7f08008c
-int id courtImageView 0x7f08008d
-int id courtNameTextView 0x7f08008e
-int id courtPhoneTextView 0x7f08008f
 int id court_btn_info 0x7f080090
 int id court_btn_reserv 0x7f080091
 int id court_image 0x7f080092
@@ -3512,6 +3509,7 @@ int id is_pooling_container_tag 0x7f080100
 int id italic 0x7f080101
 int id item_number 0x7f080102
 int id item_touch_helper_previous_elevation 0x7f080103
+int id ivCourtImage 0x7f08024a
 int id jumpToEnd 0x7f080104
 int id jumpToStart 0x7f080105
 int id labeled 0x7f080106
@@ -3805,6 +3803,9 @@ int id transition_scene_layoutid_cache 0x7f080225
 int id transition_transform 0x7f080226
 int id triangle 0x7f080227
 int id tuesday 0x7f080228
+int id tvCourtAddress 0x7f08024b
+int id tvCourtName 0x7f08024c
+int id tvCourtPhone 0x7f08024d
 int id tvReserveDay 0x7f080229
 int id tvReservedSchedule 0x7f08022a
 int id tvShowReservationCourtNumber 0x7f08022b
@@ -3972,7 +3973,7 @@ int layout design_navigation_menu 0x7f0b002a
 int layout design_navigation_menu_item 0x7f0b002b
 int layout design_text_input_end_icon 0x7f0b002c
 int layout design_text_input_start_icon 0x7f0b002d
-int layout dialog_court_details 0x7f0b002e
+int layout dialog_court_info 0x7f0b0080
 int layout dialog_reservation 0x7f0b002f
 int layout dialog_show_reservation 0x7f0b0030
 int layout fragment_calendar 0x7f0b0031
