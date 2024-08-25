@@ -11,9 +11,6 @@ import android.view.ViewGroup
 import com.example.tennis.R
 import com.example.tennis.ui.starred.placeholder.PlaceholderContent
 
-/**
- * A fragment representing a list of Items.
- */
 class StarredCourtFragment : Fragment() {
 
     private var columnCount = 1
@@ -39,7 +36,7 @@ class StarredCourtFragment : Fragment() {
                     columnCount <= 1 -> LinearLayoutManager(context)
                     else -> GridLayoutManager(context, columnCount)
                 }
-                adapter = MyStarredCourtRecyclerViewAdapter(PlaceholderContent.ITEMS)
+                adapter = MyStarredCourtRecyclerViewAdapter(PlaceholderContent.ITEMS, requireContext())
             }
         }
         return view
@@ -47,10 +44,8 @@ class StarredCourtFragment : Fragment() {
 
     companion object {
 
-        // TODO: Customize parameter argument names
         const val ARG_COLUMN_COUNT = "column-count"
 
-        // TODO: Customize parameter initialization
         @JvmStatic
         fun newInstance(columnCount: Int) =
             StarredCourtFragment().apply {
