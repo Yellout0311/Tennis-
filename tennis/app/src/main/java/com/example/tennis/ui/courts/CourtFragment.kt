@@ -11,9 +11,6 @@ import android.view.ViewGroup
 import com.example.tennis.R
 import com.example.tennis.ui.courts.placeholder.PlaceholderContent
 
-/**
- * A fragment representing a list of Items.
- */
 class CourtFragment : Fragment() {
 
     private var columnCount = 1
@@ -40,18 +37,15 @@ class CourtFragment : Fragment() {
                 columnCount <= 1 -> LinearLayoutManager(context)
                 else -> GridLayoutManager(context, columnCount)
             }
-            adapter = MyCourtRecyclerViewAdapter(PlaceholderContent.ITEMS)
+            adapter = MyCourtRecyclerViewAdapter(PlaceholderContent.ITEMS, requireContext())
         }
 
         return view
     }
 
     companion object {
-
-        // TODO: Customize parameter argument names
         const val ARG_COLUMN_COUNT = "column-count"
 
-        // TODO: Customize parameter initialization
         @JvmStatic
         fun newInstance(columnCount: Int) =
             CourtFragment().apply {

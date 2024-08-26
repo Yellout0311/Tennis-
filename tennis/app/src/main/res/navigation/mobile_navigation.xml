@@ -29,9 +29,4 @@
         android:label="@string/title_calnedar"
         tools:layout="@layout/fragment_calendar" />
 
-    <fragment
-        android:id="@+id/navigation_user"
-        android:name="com.example.tennis.ui.user.UserSettingFragment"
-        android:label="@string/title_user"
-        tools:layout="@layout/fragment_user_setting" />
 </navigation>

@@ -9,11 +9,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.tennis.R
-import com.example.tennis.ui.starred.placeholder.PlaceholderContent
+import com.example.tennis.data.SharedPreferencesHelper
+import com.example.tennis.ui.courts.MyCourtRecyclerViewAdapter
+import com.example.tennis.ui.courts.placeholder.PlaceholderContent
 
-/**
- * A fragment representing a list of Items.
- */
 class StarredCourtFragment : Fragment() {
 
     private var columnCount = 1
@@ -33,24 +32,26 @@ class StarredCourtFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_starred_list, container, false)
 
         // Set the adapter
-        if (view is RecyclerView) {
-            with(view) {
-                layoutManager = when {
-                    columnCount <= 1 -> LinearLayoutManager(context)
-                    else -> GridLayoutManager(context, columnCount)
-                }
-                adapter = MyStarredCourtRecyclerViewAdapter(PlaceholderContent.ITEMS)
+        val recyclerView = view.findViewById<RecyclerView>(R.id.starred_court_list)
+        with(recyclerView) {
+            layoutManager = when {
+                columnCount <= 1 -> LinearLayoutManager(context)
+                else -> GridLayoutManager(context, columnCount)
             }
+
+            val starredItems = PlaceholderContent.ITEMS.filter {
+                SharedPreferencesHelper.isCourtStarred(requireContext(), it.id)
+            }
+
+            adapter = MyStarredCourtRecyclerViewAdapter(starredItems, requireContext())
         }
         return view
     }
 
     companion object {
 
-        // TODO: Customize parameter argument names
         const val ARG_COLUMN_COUNT = "column-count"
 
-        // TODO: Customize parameter initialization
         @JvmStatic
         fun newInstance(columnCount: Int) =
             StarredCourtFragment().apply {

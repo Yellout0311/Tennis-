@@ -1,5 +1,6 @@
 package com.example.tennis.ui.starred.placeholder
 
+import androidx.fragment.app.Fragment
 import java.util.ArrayList
 import java.util.HashMap
 
@@ -9,7 +10,7 @@ import java.util.HashMap
  *
  * TODO: Replace all uses of this class before publishing your app.
  */
-object PlaceholderContent {
+object PlaceholderContent : Fragment() {
 
     /**
      * An array of sample (placeholder) items.
@@ -21,7 +22,7 @@ object PlaceholderContent {
      */
     val ITEM_MAP: MutableMap<String, PlaceholderItem> = HashMap()
 
-    private val COUNT = 30
+    private val COUNT = 5
 
     init {
         // Add some sample items.
