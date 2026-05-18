@@ -1,5 +1,6 @@
 # **서울 테니스 코트 앱**  
-서울시 공공 테니스 코트 정보를 조회하고, 즐겨찾기 및 예약 일정을 관리할 수 있는 Android 앱입니다.
+서울시 공공 테니스 코트 정보를 조회하고, 즐겨찾기 및 예약 일정을 관리할 수 있는 Android 앱입니다.  
+
 ### 주요 기능
 1. 코트 목록
 
@@ -23,7 +24,7 @@ Google Maps 길찾기 연동
 파란 점: 예약일 / 빨간 점: 예매일 구분 표시
 
 ### 기술 스택
-
+Android Studio 앱을 이용하여 개발  
 언어: Kotlin, Java
 아키텍처: MVVM (ViewModel + LiveData)
 UI: Fragment, RecyclerView, BottomNavigationView
