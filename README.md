@@ -58,7 +58,7 @@ com.example.tennis
         
 ### API 키 설정
 이 앱은 Google Maps API Key가 필요합니다.
-AndroidManifest.xml에 아래와 같이 추가하세요.
+AndroidManifest.xml에 추가 필요.
 xml<meta-data
     android:name="com.google.android.geo.API_KEY"
     android:value="YOUR_API_KEY_HERE" />
